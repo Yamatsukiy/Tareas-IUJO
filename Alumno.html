@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcular Promedio</title>
+</head>
+<body>
+	<h1>Ingrese las notas del alumno:</h1>
+	<label>Nota 1:</label>
+	<input type="number" id="nota1"><br>
+	<label>Nota 2:</label>
+	<input type="number" id="nota2"><br>
+	<label>Nota 3:</label>
+	<input type="number" id="nota3"><br>
+	<button onclick="calcularPromedio()">Calcular Promedio</button>
+	<p id="resultado"></p>
+
+	<script>
+		function calcularPromedio() {
+			var nota1 = parseFloat(document.getElementById("nota1").value);
+			var nota2 = parseFloat(document.getElementById("nota2").value);
+			var nota3 = parseFloat(document.getElementById("nota3").value);
+			var promedio = (nota1 + nota2 + nota3) / 3;
+
+			if (promedio >= 7) {
+				document.getElementById("resultado").innerHTML = "Promocionado";
+			} else if (promedio >= 4 && promedio < 7) {
+				document.getElementById("resultado").innerHTML = "Regular";
+			} else {
+				document.getElementById("resultado").innerHTML = "Reprobado";
+			}
+		}
+	</script>
+</body>
+</html>
