@@ -1,0 +1,26 @@
+.container {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+input[type="text"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #3E8E41;
+}
+p#resultado {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
